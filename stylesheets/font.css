@@ -4,13 +4,13 @@
 }
 
 @font-face {
-  src: url("../fonts/Morganite-Medium.ttf");
-  font-family: "mg";
+  src: url("../fonts/BebasNeue-Regular.ttf");
+  font-family: "bn";
 }
 
 .fs1 {
   font-size: 25vmax;
-  font-family: "bebas neue";
+  font-family: "bn";
   font-weight: 500;
   color: #fff;
 }
@@ -42,6 +42,14 @@
   font-family: "nm";
   font-weight: 500;
   color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs6 {
+  font-size: 0.9vmax;
+  font-family: "nm";
+  font-weight: 600;
+  color: rgb(92, 92, 92);
   letter-spacing: 0.05vmax;
 }
 

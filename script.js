@@ -101,7 +101,7 @@ function sec1() {
 }
 sec1();
 
-function sec5() {
+function sec3() {
   gsap.to(".marqueebox h2", {
     repeat: -1,
     x: "-100%",
@@ -112,7 +112,7 @@ function sec5() {
   gsap.to(".imgbox3D", {
     scrollTrigger: {
       scroller: ".wrapper",
-      trigger: ".sec5",
+      trigger: ".sec3",
       start: "top top",
       pin: true,
       scrub: 2,
@@ -133,7 +133,7 @@ function sec5() {
   });
 }
 
-sec5();
+sec3();
 
 function sec4() {
   gsap.to(".imgbox", {
