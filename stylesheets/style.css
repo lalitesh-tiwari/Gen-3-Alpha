@@ -371,4 +371,185 @@ body {
   -o-object-position: center 0;
      object-position: center 0;
   margin-left: 0.5vmax;
+}
+.wrapper .sec5 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4vmax;
+}
+.wrapper .sec5 .textbox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper .sec5 .textbox h3 {
+  font-weight: 500;
+  line-height: 5vmax;
+  padding-right: 40vmax;
+}
+.wrapper .sec5 .textbox p {
+  position: relative;
+  line-height: 1.8vmax;
+  width: 75%;
+  padding: 1vmax 2vmax;
+  border: 1px solid #fff;
+  border-radius: 5vmax;
+  margin-top: 2vmax;
+}
+.wrapper .sec5 .textbox p span {
+  font-weight: 500;
+  letter-spacing: 0.05vmax;
+  margin: 0 0.5vmax;
+}
+.wrapper .sec5 .textbox p i {
+  position: absolute;
+  top: 50%;
+  right: 2vmax;
+  transform: translateY(-50%);
+}
+.wrapper .sec5 .stripebox {
+  position: relative;
+  height: 100vh;
+  width: 4%;
+  background-color: #000;
+  border-left: 1px solid #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper .sec5 .stripebox h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 500;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.wrapper .sec5 .stripebox i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1vmax;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s linear;
+}
+.wrapper .sec5 .stripebox h3 {
+  font-weight: 500;
+  line-height: 5vmax;
+  padding: 4vmax;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s linear;
+}
+.wrapper .sec5 .stripebox .imgbox {
+  position: absolute;
+  bottom: 4vmax;
+  right: 4vmax;
+  height: 28vmax;
+  width: 45vmax;
+  flex-shrink: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s linear;
+}
+.wrapper .sec5 .stripebox .imgbox img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper .sec5 #sb-1 {
+  position: absolute;
+  right: 12%;
+  z-index: 6;
+}
+.wrapper .sec5 #sb-2 {
+  position: absolute;
+  right: 8%;
+  z-index: 7;
+}
+.wrapper .sec5 #sb-3 {
+  position: absolute;
+  right: 4%;
+  z-index: 8;
+}
+.wrapper .sec5 #sb-4 {
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec5 {
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 3vmax;
+    padding-top: 9.5vmax;
+  }
+  .wrapper .sec5 .textbox h3 {
+    line-height: 6vmax;
+    padding: 0;
+  }
+  .wrapper .sec5 .textbox p {
+    line-height: 2.8vmax;
+    width: 100%;
+    border-radius: 10vmax;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 2vmax 3vmax;
+    padding-right: 8vmax;
+    margin-top: 9vmax;
+  }
+  .wrapper .sec5 .textbox p span {
+    margin-left: 0;
+    margin-right: 0.8vmax;
+  }
+  .wrapper .sec5 .stripebox {
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vmax;
+    border-left: none;
+    border-top: 1px solid #fff;
+    padding: 3vmax 3vmax;
+  }
+  .wrapper .sec5 .stripebox i {
+    padding: 1.5vmax;
+  }
+  .wrapper .sec5 .stripebox h3 {
+    line-height: 6vmax;
+    padding: 0;
+  }
+  .wrapper .sec5 .stripebox .imgbox {
+    position: static;
+    height: 30vmax;
+    width: 100%;
+  }
+  .wrapper .sec5 #sb-1 {
+    bottom: 18%;
+    right: 0;
+  }
+  .wrapper .sec5 #sb-2 {
+    bottom: 12%;
+    right: 0;
+  }
+  .wrapper .sec5 #sb-3 {
+    bottom: 6%;
+    right: 0;
+  }
+  .wrapper .sec5 #sb-4 {
+    bottom: 0;
+    right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

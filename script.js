@@ -101,7 +101,7 @@ function sec1() {
 }
 sec1();
 
-function sec3() {
+function sec5() {
   gsap.to(".marqueebox h2", {
     repeat: -1,
     x: "-100%",
@@ -112,7 +112,7 @@ function sec3() {
   gsap.to(".imgbox3D", {
     scrollTrigger: {
       scroller: ".wrapper",
-      trigger: ".sec3",
+      trigger: ".sec5",
       start: "top top",
       pin: true,
       scrub: 2,
@@ -133,7 +133,7 @@ function sec3() {
   });
 }
 
-sec3();
+sec5();
 
 function sec4() {
   gsap.to(".imgbox", {
@@ -149,3 +149,120 @@ function sec4() {
 }
 
 sec4();
+
+function sec5() {
+  document.querySelector(".sec5").addEventListener("click", function (dets) {
+    let sb = dets.target.id;
+    let stripebox = "#" + sb;
+    let gt = sb.split("-")[1];
+    let dec = 100 - (4 - gt) * 4;
+    let sbelem = ".sb-" + gt + "-elem";
+    let number = document.querySelectorAll(".stripebox h5");
+
+    if (window.screen.width < 850) {
+      dec = 100 - (4 - gt) * 6;
+
+      gsap.to(stripebox, {
+        duration: 2,
+        height: dec + "vh",
+        ease: "expo.out",
+      });
+
+      gsap.to(dets.target.children[0], {
+        opacity: 0,
+        pointerEvents: "all",
+      });
+
+      gsap.to(dets.target.children[1], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 1.5,
+      });
+
+      gsap.to(dets.target.children[2], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 1,
+      });
+
+      gsap.to(dets.target.children[3], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 0.5,
+      });
+
+      document.querySelector(sbelem).addEventListener("click", function (dets) {
+        gsap.to(number, {
+          opacity: 1,
+          delay: 2,
+          pointerEvents: "none",
+        });
+
+        gsap.to(sbelem, {
+          opacity: 0,
+          pointerEvents: "none",
+          stagger: 0.25,
+        });
+
+        gsap.to("#" + sb, {
+          height: "6vh",
+          delay: 1,
+          ease: "expo.out",
+          duration: 2,
+        });
+      });
+    } else {
+      gsap.to(stripebox, {
+        duration: 2,
+        width: dec + "%",
+        ease: "expo.out",
+      });
+
+      gsap.to(dets.target.children[0], {
+        opacity: 0,
+        pointerEvents: "all",
+      });
+
+      gsap.to(dets.target.children[1], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 1.5,
+      });
+
+      gsap.to(dets.target.children[2], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 1,
+      });
+
+      gsap.to(dets.target.children[3], {
+        opacity: 1,
+        pointerEvents: "all",
+        delay: 0.5,
+      });
+
+      document.querySelector(sbelem).addEventListener("click", function (dets) {
+        gsap.to(number, {
+          opacity: 1,
+          delay: 2,
+          pointerEvents: "none",
+        });
+
+        gsap.to(sbelem, {
+          opacity: 0,
+          pointerEvents: "none",
+          stagger: 0.25,
+        });
+
+        gsap.to("#" + sb, {
+          width: "4%",
+          delay: 1,
+          ease: "expo.out",
+          duration: 2,
+        });
+      });
+    }
+  });
+}
+
+sec5();
