@@ -1,0 +1,59 @@
+@font-face {
+  src: url("../fonts/NeueMontreal-Regular.otf");
+  font-family: "nm";
+}
+
+@font-face {
+  src: url("../fonts/Morganite-Medium.ttf");
+  font-family: "mg";
+}
+
+.fs1 {
+  font-size: 25vmax;
+  font-family: "bebas neue";
+  font-weight: 500;
+  color: #fff;
+}
+
+.fs2 {
+  font-size: 9vmax;
+  font-family: "nm";
+  font-weight: 500;
+  color: #fff;
+}
+
+.fs3 {
+  font-size: 3vmax;
+  font-family: "nm";
+  font-weight: 500;
+  color: #fff;
+}
+
+.fs4 {
+  font-size: 1.5vmax;
+  font-family: "nm";
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs5 {
+  font-size: 1vmax;
+  font-family: "nm";
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+@media (max-width: 30cm) {
+  .fs1 {
+    font-size: 18vmax;
+  }
+  .fs4 {
+    font-size: 2.5vmax;
+  }
+
+  .fs5 {
+    font-size: 1.5vmax;
+  }
+}
