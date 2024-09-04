@@ -233,6 +233,8 @@ body {
       }
 
       .halfCircle {
+        height: 80vmax;
+        width: 80vmax;
         transform: translate(-50%, -20%);
       }
     }
@@ -241,6 +243,12 @@ body {
   .sec2 {
     height: 50vh;
     width: 100%;
+  }
+
+  @media (max-width: 30cm) {
+    .sec2 {
+      height: 40vh;
+    }
   }
 
   .sec3 {

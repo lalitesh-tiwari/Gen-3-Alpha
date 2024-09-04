@@ -202,12 +202,19 @@ body {
     margin-top: -11vmax;
   }
   .wrapper .sec1 .halfCircle {
+    height: 80vmax;
+    width: 80vmax;
     transform: translate(-50%, -20%);
   }
 }
 .wrapper .sec2 {
   height: 50vh;
   width: 100%;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec2 {
+    height: 40vh;
+  }
 }
 .wrapper .sec3 {
   height: 100vh;

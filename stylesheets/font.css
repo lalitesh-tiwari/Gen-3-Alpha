@@ -47,12 +47,11 @@
 
 @media (max-width: 30cm) {
   .fs1 {
-    font-size: 18vmax;
+    font-size: 15vmax;
   }
   .fs4 {
     font-size: 2.5vmax;
   }
-
   .fs5 {
     font-size: 1.5vmax;
   }
