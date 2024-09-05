@@ -32,6 +32,61 @@ function locomotive() {
 }
 locomotive();
 
+function loader() {
+  let loaderHeading = document.querySelector(".loader .textbox h3");
+  var clutter1 = "";
+  loaderHeading.textContent.split("").forEach(function (charc) {
+    clutter1 += `<span>${charc}</span>`;
+  });
+  loaderHeading.innerHTML = clutter1;
+
+  setTimeout(() => {
+    document.fonts.ready.then(function () {
+      const loader = document.querySelector(".loader");
+
+      let tl1 = gsap.timeline();
+
+      tl1
+        .to(".textbox h3 span", {
+          stagger: 0.1,
+          filter: "blur(0px)",
+          duration: 0.8,
+          opacity: 1,
+          ease: Expo,
+        })
+        .to(".textbox h3 span", {
+          stagger: 0.1,
+          filter: "blur(2px)",
+          duration: 0.2,
+          opacity: 0,
+          ease: Expo,
+        })
+        .to(loader, {
+          height: "0vh",
+          onComplete: () => {
+            loader.style.display = none;
+          },
+        })
+        .to(loader.children[0], {
+          display: "none",
+        });
+    });
+  }, 2000);
+}
+
+loader();
+
+function cursor() {
+  document.addEventListener("mousemove", function (event) {
+    gsap.to(".wrapper .cursor", {
+      top: event.y,
+      left: event.x,
+      duration: 0.3,
+    });
+  });
+}
+cursor();
+
 function notch() {
   let iBox = document.querySelector(".notch .iconbox");
   let moon = document.querySelector(".notch .iconbox .moon");
@@ -150,8 +205,8 @@ function sec4() {
 
 sec4();
 
-function sec5() {
-  document.querySelector(".sec5").addEventListener("click", function (dets) {
+function sec6() {
+  document.querySelector(".sec6").addEventListener("click", function (dets) {
     let sb = dets.target.id;
     let stripebox = "#" + sb;
     let gt = sb.split("-")[1];
@@ -163,7 +218,7 @@ function sec5() {
       dec = 100 - (4 - gt) * 6;
 
       gsap.to(stripebox, {
-        duration: 2,
+        duration: 1,
         height: dec + "vh",
         ease: "expo.out",
       });
@@ -213,7 +268,7 @@ function sec5() {
       });
     } else {
       gsap.to(stripebox, {
-        duration: 2,
+        duration: 1,
         width: dec + "%",
         ease: "expo.out",
       });
@@ -265,4 +320,4 @@ function sec5() {
   });
 }
 
-sec5();
+sec6();

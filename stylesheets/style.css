@@ -13,6 +13,39 @@ body {
   background-color: #000;
 }
 
+.loader {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  transition: 0.25s linear;
+  z-index: 9999;
+}
+.loader .textbox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.loader .textbox h3 {
+  font-family: "bn";
+  font-size: 4vmax;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.loader .textbox h3 span {
+  filter: "blur(2px)";
+  opacity: 0;
+}
+
 .link {
   position: relative;
   top: 0;
@@ -134,6 +167,18 @@ body {
   width: 100%;
   background-color: #000;
 }
+.wrapper .cursor {
+  height: 2vmax;
+  width: 2vmax;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
 .wrapper .sec1 {
   position: relative;
   height: 100vh;
@@ -251,14 +296,16 @@ body {
   text-transform: uppercase;
   color: #fefefe;
   white-space: nowrap;
-  min-width: 200vmax;
+  min-width: 125vmax;
+  font-family: "bn";
 }
 .wrapper .sec3 .mrq2 h2 {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px #fefefe;
   white-space: nowrap;
-  min-width: 145vmax;
+  min-width: 91vmax;
+  font-family: "bn";
 }
 .wrapper .sec3 .imgbox3D {
   position: absolute;
@@ -375,6 +422,150 @@ body {
   margin-left: 0.5vmax;
 }
 .wrapper .sec5 {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vmax;
+  color: #fff;
+  padding: 5vmax 0;
+}
+.wrapper .sec5 .content1 {
+  width: 35%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 5vmax;
+}
+.wrapper .sec5 .content1 .box {
+  width: 90%;
+  height: 35%;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .sec5 .content1 .box h1 {
+  font-size: 2vmax;
+}
+.wrapper .sec5 .content1 .box p {
+  margin-top: 1vmax;
+  font-size: 1.1vmax;
+}
+.wrapper .sec5 .content2 {
+  width: 35%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 5vmax;
+}
+.wrapper .sec5 .content2 .box {
+  width: 90%;
+  height: 40%;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.wrapper .sec5 .content2 .box h1 {
+  font-size: 2vmax;
+}
+.wrapper .sec5 .content2 .box p {
+  margin-top: 1vmax;
+  font-size: 1.1vmax;
+}
+.wrapper .sec5 .progress {
+  width: 0.5px;
+  height: 95%;
+  background: #fff;
+  position: relative;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec5 {
+    width: 100%;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+    color: #fff;
+  }
+  .wrapper .sec5 .content1 {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vmax;
+    position: absolute;
+    top: 3%;
+    z-index: 99;
+  }
+  .wrapper .sec5 .content1 .box {
+    width: 90%;
+    height: 50%;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  .wrapper .sec5 .content1 .box h1 {
+    font-size: 3vmax;
+  }
+  .wrapper .sec5 .content1 .box p {
+    margin-top: 1vmax;
+    font-size: 1.5vmax;
+  }
+  .wrapper .sec5 .content2 {
+    width: 80%;
+    height: 75%;
+    margin: 3vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vmax;
+    position: absolute;
+    top: 80%;
+    z-index: 99;
+  }
+  .wrapper .sec5 .content2 .box {
+    width: 90%;
+    height: 50%;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+  }
+  .wrapper .sec5 .content2 .box h1 {
+    font-size: 3vmax;
+  }
+  .wrapper .sec5 .content2 .box p {
+    margin-top: 1vmax;
+    font-size: 1.5vmax;
+  }
+  .wrapper .sec5 .progress {
+    width: 1px;
+    height: 95%;
+    background: #fff;
+    position: relative;
+    z-index: 9;
+  }
+}
+.wrapper .sec6 {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -382,15 +573,14 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 4vmax;
-  border-bottom: 1px solid #fff;
 }
-.wrapper .sec5 .textbox {
+.wrapper .sec6 .textbox {
   height: -moz-fit-content;
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.wrapper .sec5 .textbox h2 {
+.wrapper .sec6 .textbox h2 {
   font-weight: 500;
   padding-right: 40vmax;
   background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
@@ -410,12 +600,12 @@ body {
     background-position: 100% 50%;
   }
 }
-.wrapper .sec5 .textbox h4 {
+.wrapper .sec6 .textbox h4 {
   line-height: 2.5vmax;
   padding-right: 36vmax;
   margin-top: 1vmax;
 }
-.wrapper .sec5 .stripebox {
+.wrapper .sec6 .stripebox {
   position: relative;
   height: 100vh;
   width: 4%;
@@ -424,7 +614,7 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-.wrapper .sec5 .stripebox h5 {
+.wrapper .sec6 .stripebox h5 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -432,7 +622,7 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
-.wrapper .sec5 .stripebox i {
+.wrapper .sec6 .stripebox i {
   position: absolute;
   top: 0;
   right: 0;
@@ -442,7 +632,7 @@ body {
   pointer-events: none;
   transition: 0.25s linear;
 }
-.wrapper .sec5 .stripebox h4 {
+.wrapper .sec6 .stripebox h4 {
   font-size: 1.8vmax;
   font-weight: 500;
   line-height: 2.8vmax;
@@ -451,7 +641,7 @@ body {
   pointer-events: none;
   transition: 0.25s linear;
 }
-.wrapper .sec5 .stripebox .videoBox {
+.wrapper .sec6 .stripebox .videoBox {
   position: absolute;
   bottom: 4vmax;
   right: 4vmax;
@@ -462,7 +652,7 @@ body {
   pointer-events: none;
   transition: 0.25s linear;
 }
-.wrapper .sec5 .stripebox .videoBox video {
+.wrapper .sec6 .stripebox .videoBox video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -470,28 +660,28 @@ body {
   -o-object-position: center;
      object-position: center;
 }
-.wrapper .sec5 #sb-1 {
+.wrapper .sec6 #sb-1 {
   position: absolute;
   right: 12%;
   z-index: 6;
 }
-.wrapper .sec5 #sb-2 {
+.wrapper .sec6 #sb-2 {
   position: absolute;
   right: 8%;
   z-index: 7;
 }
-.wrapper .sec5 #sb-3 {
+.wrapper .sec6 #sb-3 {
   position: absolute;
   right: 4%;
   z-index: 8;
 }
-.wrapper .sec5 #sb-4 {
+.wrapper .sec6 #sb-4 {
   position: absolute;
   right: 0;
   z-index: 9;
 }
 @media (max-width: 30cm) {
-  .wrapper .sec5 {
+  .wrapper .sec6 {
     height: 100vh;
     justify-content: flex-start;
     flex-direction: column;
@@ -499,11 +689,11 @@ body {
     padding: 0 3vmax;
     padding-top: 9.5vmax;
   }
-  .wrapper .sec5 .textbox h3 {
+  .wrapper .sec6 .textbox h3 {
     line-height: 6vmax;
     padding: 0;
   }
-  .wrapper .sec5 .textbox p {
+  .wrapper .sec6 .textbox p {
     line-height: 2.8vmax;
     width: 100%;
     border-radius: 10vmax;
@@ -513,11 +703,11 @@ body {
     padding-right: 8vmax;
     margin-top: 9vmax;
   }
-  .wrapper .sec5 .textbox p span {
+  .wrapper .sec6 .textbox p span {
     margin-left: 0;
     margin-right: 0.8vmax;
   }
-  .wrapper .sec5 .stripebox {
+  .wrapper .sec6 .stripebox {
     height: 6vh;
     width: 100%;
     display: flex;
@@ -528,31 +718,31 @@ body {
     border-top: 1px solid #fff;
     padding: 3vmax 3vmax;
   }
-  .wrapper .sec5 .stripebox i {
+  .wrapper .sec6 .stripebox i {
     padding: 1.5vmax;
   }
-  .wrapper .sec5 .stripebox h3 {
+  .wrapper .sec6 .stripebox h3 {
     line-height: 6vmax;
     padding: 0;
   }
-  .wrapper .sec5 .stripebox .videoBox {
+  .wrapper .sec6 .stripebox .videoBox {
     position: static;
     height: 30vmax;
     width: 100%;
   }
-  .wrapper .sec5 #sb-1 {
+  .wrapper .sec6 #sb-1 {
     bottom: 18%;
     right: 0;
   }
-  .wrapper .sec5 #sb-2 {
+  .wrapper .sec6 #sb-2 {
     bottom: 12%;
     right: 0;
   }
-  .wrapper .sec5 #sb-3 {
+  .wrapper .sec6 #sb-3 {
     bottom: 6%;
     right: 0;
   }
-  .wrapper .sec5 #sb-4 {
+  .wrapper .sec6 #sb-4 {
     bottom: 0;
     right: 0;
   }
