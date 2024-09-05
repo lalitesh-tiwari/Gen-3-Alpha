@@ -282,8 +282,8 @@ body {
       }
 
       .halfCircle {
-        height: 80vmax;
-        width: 80vmax;
+        height: 60vmax;
+        width: 60vmax;
         transform: translate(-50%, -20%);
       }
     }
@@ -561,94 +561,7 @@ body {
 
   @media (max-width: 30cm) {
     .sec5 {
-      width: 100%;
-      min-height: 100vh;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2vmax;
-      color: #fff;
-
-      .content1 {
-        width: 80%;
-        height: 75%;
-        // border: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 5vmax;
-        position: absolute;
-        top: 3%;
-        z-index: 99;
-
-        .box {
-          width: 90%;
-          height: 50%;
-          // border: 1px solid white;
-          padding: 2vmax;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          // position: absolute;
-          background-color: black;
-
-          h1 {
-            font-size: 3vmax;
-          }
-
-          p {
-            margin-top: 1vmax;
-            font-size: 1.5vmax;
-          }
-        }
-      }
-
-      .content2 {
-        width: 80%;
-        height: 75%;
-        // border: 1px solid white;
-        margin: 3vmax;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 5vmax;
-        position: absolute;
-        top: 80%;
-        z-index: 99;
-
-        .box {
-          width: 90%;
-          height: 50%;
-          // border: 1px solid white;
-          padding: 2vmax;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: end;
-          background-color: black;
-
-          h1 {
-            font-size: 3vmax;
-          }
-
-          p {
-            margin-top: 1vmax;
-            font-size: 1.5vmax;
-          }
-        }
-      }
-
-      .progress {
-        width: 1px;
-        height: 95%;
-        background: #fff;
-        position: relative;
-        z-index: 9;
-      }
+      display: none;
     }
   }
 
