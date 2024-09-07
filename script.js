@@ -85,7 +85,7 @@ function cursor() {
     });
   });
 }
-cursor();
+// cursor();
 
 function notch() {
   let iBox = document.querySelector(".notch .iconbox");
@@ -126,29 +126,30 @@ notch();
 function sec1() {
   gsap.from(".t1, .t2", {
     y: 1000,
+    delay: 5.3,
     duration: 0.8,
     ease: "expo.out",
   });
   gsap.from(".t3, .t4", {
-    delay: 0.1,
+    delay: 5.4,
     y: 1000,
     duration: 0.9,
     ease: "expo.out",
   });
   gsap.from(".t5, .t6", {
-    delay: 0.2,
+    delay: 5.5,
     y: 1000,
     duration: 0.9,
     ease: "expo.out",
   });
   gsap.from(".t7, .t8", {
-    delay: 0.3,
+    delay: 5.6,
     y: 1000,
     duration: 0.9,
     ease: "expo.out",
   });
   gsap.from(".t9, .t10", {
-    delay: 0.4,
+    delay: 5.7,
     y: 1000,
     duration: 0.9,
     ease: "expo.out",

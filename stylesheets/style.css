@@ -168,8 +168,8 @@ body {
   background-color: #000;
 }
 .wrapper .cursor {
-  height: 2vmax;
-  width: 2vmax;
+  height: 0.5vmax;
+  width: 0.5vmax;
   border-radius: 50%;
   position: fixed;
   z-index: 999;
@@ -205,8 +205,8 @@ body {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -43%);
-  height: 60vmax;
-  width: 60vmax;
+  height: 50vmax;
+  width: 50vmax;
   border-radius: 50%;
   background-color: rgb(42, 42, 42);
   overflow: hidden;
@@ -423,7 +423,7 @@ body {
 }
 .wrapper .sec5 {
   width: 100%;
-  height: 150vh;
+  height: 180vh;
   display: flex;
   align-items: center;
   justify-content: center;

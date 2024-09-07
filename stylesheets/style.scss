@@ -169,6 +169,7 @@ body {
       &:nth-child(3) {
         display: none;
       }
+
       &:nth-child(5) {
         display: none;
       }
@@ -191,8 +192,8 @@ body {
   background-color: #000;
 
   .cursor {
-    height: 2vmax;
-    width: 2vmax;
+    height: 0.5vmax;
+    width: 0.5vmax;
     border-radius: 50%;
     position: fixed;
     z-index: 999;
@@ -232,8 +233,8 @@ body {
       top: 100%;
       left: 50%;
       transform: translate(-50%, -43%);
-      height: 60vmax;
-      width: 60vmax;
+      height: 50vmax;
+      width: 50vmax;
       border-radius: 50%;
       background-color: rgb(42, 42, 42);
       overflow: hidden;
@@ -361,6 +362,7 @@ body {
       width: 30vmax;
       transition: 0.25s linear;
       will-change: transform;
+      // border:  1px solid white;
 
       img {
         height: 100%;
@@ -481,7 +483,7 @@ body {
 
   .sec5 {
     width: 100%;
-    height: 150vh;
+    height: 180vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -581,13 +583,11 @@ body {
       h2 {
         font-weight: 500;
         padding-right: 40vmax;
-        background: linear-gradient(
-          to right,
-          #7953cd 20%,
-          #00affa 30%,
-          #0190cd 70%,
-          #764ada 80%
-        );
+        background: linear-gradient(to right,
+            #7953cd 20%,
+            #00affa 30%,
+            #0190cd 70%,
+            #764ada 80%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -601,6 +601,7 @@ body {
         0% {
           background-position: 0% 50%;
         }
+
         100% {
           background-position: 100% 50%;
         }
@@ -677,16 +678,19 @@ body {
       right: 12%;
       z-index: 6;
     }
+
     #sb-2 {
       position: absolute;
       right: 8%;
       z-index: 7;
     }
+
     #sb-3 {
       position: absolute;
       right: 4%;
       z-index: 8;
     }
+
     #sb-4 {
       position: absolute;
       right: 0;
@@ -757,14 +761,17 @@ body {
         bottom: 18%;
         right: 0;
       }
+
       #sb-2 {
         bottom: 12%;
         right: 0;
       }
+
       #sb-3 {
         bottom: 6%;
         right: 0;
       }
+
       #sb-4 {
         bottom: 0;
         right: 0;
@@ -1009,13 +1016,11 @@ body {
             color: #fefefe;
             white-space: nowrap;
             min-width: 125vmax;
-            background: linear-gradient(
-              to right,
-              #7953cd 20%,
-              #00affa 30%,
-              #0190cd 70%,
-              #764ada 80%
-            );
+            background: linear-gradient(to right,
+                #7953cd 20%,
+                #00affa 30%,
+                #0190cd 70%,
+                #764ada 80%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -1029,6 +1034,7 @@ body {
             0% {
               background-position: 0% 50%;
             }
+
             100% {
               background-position: 100% 50%;
             }
@@ -1045,6 +1051,7 @@ body {
   @media (max-width: 30cm) {
     .footer {
       min-height: 100vh;
+
       .top {
         height: 8%;
         width: 100%;
@@ -1065,6 +1072,7 @@ body {
           align-items: center;
           gap: 4vmax;
         }
+
         .right {
           // background-color:red;
 
